@@ -16,16 +16,18 @@ def getStrongPrime(bits):
     print(traversals)
     return
 
-def mod_exp(b, e, m):
+#modular exponentiation
+def mod_exp(g, a, p):
 
-    r = 1
-    if 1 & e:
-        r = b
-    while e:
-        e >>= 1
-        b = (b * b) % m
-        if e & 1: r = (r * b) % m
-    return r
+    output = 1
+
+    
+    while (a != 0):
+        a = a >> 1
+        g = (g * g) % p
+        if(a & 1 != 0):
+            output = (output * g) % p
+    return output
 
 #getStrongPrime(1024)
 p = 123169379117828169464046813292789428860836872824748369264296732639443218010560603258436048682596330887626356913181124303703014377062467835014718465253656878480036043823751652584591555569048587344199357191969518677994437189021877347538983787977642183702534721984911356665006945539110300659460332235330960998659
@@ -38,3 +40,7 @@ n = pow(g, a, p)
 m = mod_exp(g, a, p)
 print(n)
 print(m)
+
+l = 0b00000001
+k = 0b00000001
+print(l & k)
