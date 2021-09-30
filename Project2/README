@@ -1,0 +1,15 @@
+Jared Staman
+CS 583 Project 2
+Hash Attack
+C++/used hashlib++ library for SHA-256
+
+The two programs made for this lab were preimage.cpp and collision.cpp. 
+
+How to compile and run preimage:
+g++ preimage.cpp hl_sha256.cpp hl_sha256wrapper.cpp -o preimage
+./preimage bitsize num_of_tests
+
+
+How to compile and run collision:
+g++ collision.cpp hl_sha256.cpp hl_sha256wrapper.cpp -o collision
+./collision bitsize num_of_tests

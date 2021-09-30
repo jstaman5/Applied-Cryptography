@@ -1,0 +1,11 @@
+Jared Staman
+CS 583 Lab 3: Mac Attack
+
+I used an already existing sha-1 implementation taken from https://github.com/TheAlgorithms/Python/blob/master/hashes/sha1.py
+The modifications to the implementation to allow the mac attack are pointed out in the program, but basically I made changes to where the sha-1 starts and its padding.
+
+How to run:
+python mac_attack.py [Alice's msg] [Mallory's msg]
+
+The output should be matching. It first tests how Mallory would perform the attack without knowing the key, and then tests using the key.
+If you want to change the key, just go into the program and change the default key from '0000000000000000' to whatever 16 byte string you want

@@ -1,0 +1,10 @@
+Jared Staman
+CS 483 Project 1: AES
+
+HOW TO RUN CODE:
+g++ aes.c -o aes
+./aes
+
+I only looked at the resources provided, and from those mainly the FIPS 197, Useful Arrays, and Unit tests.
+
+This program should pass all 3 test cases.
