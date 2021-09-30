@@ -9,7 +9,7 @@ def getStrongPrime(bits):
     check = 0
     while(check == 0):
         num = getPrime(bits)
-        num2 = int( (num-1) / 2)
+        num2 = (num-1) // 2
         if( isPrime( num2)):
             check = 1
 
