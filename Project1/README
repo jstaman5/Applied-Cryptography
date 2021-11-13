@@ -5,6 +5,5 @@ HOW TO RUN CODE:
 g++ aes.c -o aes
 ./aes
 
-I only looked at the resources provided, and from those mainly the FIPS 197, Useful Arrays, and Unit tests.
+I implemented AES encryption using the FIPS 197 specification (https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197.pdf). 
 
-This program should pass all 3 test cases.
