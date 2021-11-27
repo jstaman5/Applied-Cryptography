@@ -4,7 +4,6 @@
 
 import hashlib
 from Crypto.Util import number
-from struct import *
 
 def generate_block(prev_block, quote):
     #generate nonces until hash starts with at least 10 bits set to 0
